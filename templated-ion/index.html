@@ -27,11 +27,11 @@
 
 <img src="./images/logo.png" class="img-fluid" alt="Responsive image">
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">Indian Data Set</a></h1>
+				<h1><a href="#">Semantic Recognition of Small Obstacles</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="index.html">News</a></li>
+						<!-- <li><a href="index.html">News</a></li> -->
 						<li><a href="index.html">Overview</a></li>
 						<li><a href="index.html">Examples</a></li>
 						<!-- <li><a href="news.html">Download</a></li> -->
@@ -45,8 +45,8 @@
 		<section id="banner">
 				<div class="inner">
 					<h1>Small Obstacle Dataset</h1>
-					<p>A responsive business oriented template with a video background<br />
-					designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p>
+					<p>A research dataset for small obstacle discovery on road scenarios<br />
+					<!--designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p> -->
 				</div>
 				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
 			</section>
@@ -65,30 +65,30 @@
 		<!-- One -->
 			<section id="one" class="wrapper style1">
 				<header class="major">
-					<h2>Ipsum feugiat consequat</h2>
-					<p>Tempus adipiscing commodo ut aliquam blandit</p>
+					<h2>Multi-modal perception for small obstacles</h2>
+					<p>We use calibrated Lidar and RGB Camera as the sensory input for the data. The dataset provides dense image annotations for the purpose of learning the semantics of low signal class types, predominantly small obstacles.</p>
 				</header>
 				<div class="container">
 					<div class="row">
 						<div class="4u">
 							<section class="special box">
 								<i class="icon fa-area-chart major"></i>
-								<h3>Justo placerat</h3>
-								<p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+								<h3>Lidar Point clouds</h3>
+								<p></p>
 							</section>
 						</div>
 						<div class="4u">
 							<section class="special box">
 								<i class="icon fa-refresh major"></i>
-								<h3>Blandit quis curae</h3>
-								<p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+								<h3>Image</h3>
+								<p></p>
 							</section>
 						</div>
 						<div class="4u">
 							<section class="special box">
 								<i class="icon fa-cog major"></i>
-								<h3>Amet sed accumsan</h3>
-								<p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+								<h3>Dense Annotations</h3>
+								<p></p>
 							</section>
 						</div>
 					</div>
@@ -133,9 +133,11 @@
 					<div class="row">
 						<div class="8u">
 							<section>
-								<h2>Mollis ut adipiscing</h2>
+								<h2>Why small obstacle discovery ?</h2>
 								<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-								<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
+								<p>Advances in traditional Computer Vision problems, with the advent of Deep Learning, have notably percolated into industrial applications, particularly within the domain of Perception for Autonomous Intelligent Systems. Many computer vision tasks have been successfully tackled with Deep Learning techniques, particularly using Deep Convolutional Neural Networks.  The state-of-the-art in Object-detection, semantic-segmentation and instance-segmentation has been well researched and documented. These networks act as function approximators for various features present in the RGB image. Their abilities are particularly accentuated when the image has distinct features, which is why networks are able to pick up signal from noise.</p>
+								<p>Small obstacles fall under the precarious position of being randomly classified, primarily because of a certain degree of lack of discernible features. Due to a general skew in their pixel frequency and their size within the frame, it seems difficult for neural networks to approximate small obstacle functions.</p>
+								<p>So, how do we pick up on the small obstacle signal? We release this dataset to pose this question to the research community. We provide two modes of sensor data. Dense RGB information, which is how traditionally this problem has been tackled, and Sparse Lidar depth. Images have been densely annotated. As of now, we restrict the labels to multiple instances of small obstacles, road and off-road. We also plan to release our benchmark on this dataset</p>
 							</section>
 						</div>
 						<div class="4u">
